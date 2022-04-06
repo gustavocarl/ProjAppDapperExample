@@ -18,7 +18,7 @@ namespace ProjAppDapperExample.Model
 
         public readonly static string GETALL = "SELECT " +
             "ID, CITY, COUNTRY, CODE, CONTINENT " +
-            "FROM AIRPORTS ";
+            "FROM AIRPORT";
 
         #endregion
 
