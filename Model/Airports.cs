@@ -8,6 +8,20 @@ namespace ProjAppDapperExample.Model
 {
     public class Airports
     {
+        #region Constants
+
+        public readonly static string INSERT = "INSERT INTO AIRPORT ( " +
+            "CITY, COUNTRY, CODE, CONTINENT " +
+            ") VALUES ( " +
+            "@CITY, @COUNTRY, @CODE, @CONTINENT " +
+            ") ";
+
+        public readonly static string GETALL = "SELECT " +
+            "ID, CITY, COUNTRY, CODE, CONTINENT " +
+            "FROM AIRPORTS ";
+
+        #endregion
+
         #region Propriedades
 
         public int Id { get; set; }
